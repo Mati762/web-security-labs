@@ -30,6 +30,8 @@ Formularz opinii klienta (*Customer Feedback*) pozwala wybrać ocenę w skali od
 6. Serwer zaakceptował żądanie, zwracając kod `201 Created`, i zapisał opinię z oceną 0 gwiazdek w bazie danych.
 
 ---
+### Alternatywna metoda (manipulacja DOM w DevTools)
+Na samym początku próbowałem przesłać opinię z zerową liczbą gwiazdek za pomocą narzędzi deweloperskich przeglądarki (`Zbadaj`) modyfikując minimalną przyjmowaną wartość, po tym kroku w zakres ocen udało się wybrać zero. Problem jednak napotkałem z przyciskiem **Submit**, który po ustawieniu oceny na zero dezaktywował się. Zanim uporałem się z przyciskiem udało mi się przesłać opinię przechwytując wychodzące żądanie w Burp Suite. Jednakże, później przyjrzałem sie temu raz jeszcze i zauważyłem, że wystarczy usunąć atrybut `disabled="true"` ze znacznika `<button>` w kodzie HTML przycisku przesyłania. Po zmodyfikowaniu stanu przycisku, formularz został wysłany.
 
 ### 3. Wpływ na bezpieczeństwo (Impact)
 Opieranie reguł biznesowych wyłącznie na walidacji frontendowej (HTML/JavaScript) pozwala każdemu użytkownikowi z narzędziem typu proxy na przesłanie dowolnych, nieprawidłowych danych bezpośrednio do API. W realnych aplikacjach podobny błąd umożliwia np. zamawianie ujemnej liczby produktów lub manipulację cenami.

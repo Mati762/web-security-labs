@@ -17,3 +17,4 @@ Repozytorium zawierające moje notatki i raporty z nauki bezpieczeństwa aplikac
 | ⭐ | DOM XSS | Cross-Site Scripting (XSS) | Test manualny | [Czytaj write-up](juice-shop/02-xss/dom-xss/writeup.md) |
 | ⭐ | Bonus Payload | Cross-Site Scripting / HTML Injection | Test manualny | [Czytaj write-up](juice-shop/02-xss/bonus-payload/writeup.md) |
 | ⭐ | Zero Stars | Improper Input Validation | Burp Suite Proxy | [Czytaj write-up](juice-shop/03-improper-input-validation/zero-stars/writeup.md) |
+| ⭐⭐ | Empty User Registration | Improper Input Validation | Burp Suite Proxy | [Czytaj write-up](juice-shop/03-improper-input-validation/empty-user-registration/writeup.md) |

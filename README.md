@@ -20,3 +20,4 @@ Repozytorium zawierające moje notatki i raporty z nauki bezpieczeństwa aplikac
 | ⭐ | Zero Stars | Improper Input Validation | Burp Suite Proxy | [Czytaj write-up](juice-shop/03-improper-input-validation/zero-stars/writeup.md) |
 | ⭐ | Mass Dispel | Unhandled Client-Side Issues | UI / Skrót Shift | [Czytaj write-up](juice-shop/04-unhandled-client-side-issues/mass-dispel/writeup.md) |
 | ⭐⭐ | Empty User Registration | Improper Input Validation | Burp Suite Proxy | [Czytaj write-up](juice-shop/03-improper-input-validation/empty-user-registration/writeup.md) |
+| ⭐⭐ | View Basket | Broken Access Control (IDOR) | Burp Suite Proxy | [Czytaj write-up](juice-shop/05-broken-access-control/view-basket/writeup.md) |
